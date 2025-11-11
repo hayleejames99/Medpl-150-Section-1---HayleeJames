@@ -23,9 +23,18 @@
       background-color: #d9c4a1;
       color: #3a2f1d;
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 2rem 1rem 1rem;
       border-bottom: 3px solid #b89b74;
       font-family: 'Playfair Display', serif;
+    }
+
+    header h1 {
+      margin-bottom: 0.3rem;
+    }
+
+    header p {
+      margin-top: 0;
+      font-size: 1rem;
     }
 
     header a {
@@ -37,6 +46,33 @@
     header a:hover {
       color: #8b7054;
       text-decoration: underline;
+    }
+
+    /* 🌸 Navigation Menu */
+    nav {
+      background-color: #e2d2b5;
+      border-bottom: 3px solid #b89b74;
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5rem 0;
+      gap: 2rem;
+    }
+
+    .menu a {
+      color: #3a2f1d;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    .menu a:hover {
+      color: #8b7054;
     }
 
     /* 🌾 Hero Banner */
@@ -71,11 +107,30 @@
       color: #fffaf0;
     }
 
-    .hero-overlay p {
-      font-family: 'Quicksand', sans-serif;
-      margin-top: 0.5rem;
-      font-size: 1.1rem;
-      color: #f9f5ed;
+    /* 🌿 Headshot + About Me */
+    .about-section {
+      text-align: center;
+      margin: 3rem auto;
+      max-width: 700px;
+      background-color: #ede4d0;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .about-section img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #b89b74;
+      margin-bottom: 1rem;
+    }
+
+    .about-section h2 {
+      font-family: 'Playfair Display', serif;
+      color: #4a3b2d;
+      margin-bottom: 0.5rem;
     }
 
     /* 🌻 Main Content */
@@ -134,21 +189,40 @@
   <header>
     <h1>Haylee James Stewart</h1>
     <p>MEDPL 150 Section 2</p>
-    <a href="reflections.html">📖 Reading Reflections</a>
   </header>
+
+  <!-- 🪵 Navigation Menu -->
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">MEDPL 150</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
   <!-- 🌿 Hero Section -->
   <section class="hero">
     <div class="hero-overlay">
-      <h1>MY WORK🌱</h1>
-  
+      <h1>Welcome to My Portfolio 🌱</h1>
     </div>
+  </section>
+
+  <!-- 🌷 About Me Section -->
+  <section class="about-section">
+    <img src="headshot.jpg" alt="Haylee James Stewart Headshot" />
+    <h2>About Me</h2>
+    <p>
+      Hi! I'm Haylee James Stewart, a passionate media student exploring the intersection
+      of storytelling, photography, and design. My creative process is inspired by the
+      literature and media I consume—films, podcasts, songs, and books. Through visual and
+      narrative mediums, I aim to craft emotionally engaging work that connects with viewers
+      on a personal level.
+    </p>
   </section>
 
   <!-- 🍂 Main Content -->
   <main>
     <h2>Assignments</h2>
-
     <ul>
       <li>Homework #1</li>
 
@@ -200,8 +274,5 @@
   <footer>
     <p>© 2025 Haylee James Stewart — 🌿 </p>
   </footer>
-</body>
-</html>
-
 </body>
 </html>
